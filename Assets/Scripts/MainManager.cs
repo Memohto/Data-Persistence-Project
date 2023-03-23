@@ -77,6 +77,7 @@ public class MainManager : MonoBehaviour
     {
         if (m_Points > GameManager.Instance.BestScore) {
             GameManager.Instance.BestScore = m_Points;
+            GameManager.Instance.SaveData();
             UpdateBestScore();
         }
         m_GameOver = true;
